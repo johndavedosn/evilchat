@@ -1,42 +1,28 @@
-# sv
+# Evil Chat.
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+A real time chat application project I'm working on in order to improve my web deveelopment skills.
 
-## Creating a project
+# Running.
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```sh
-# create a new project
-npx sv create my-app
+1. Clone the repo:
+```bash
+git clone https://github.com/johndavedosn/evilchat # From GitHub.
+git clone https://git.ali-moumen.tech/Ali/evilchat.git # From Forgejo.
 ```
-
-To recreate this project with the same configuration:
-
-```sh
-# recreate this project
-pnpm dlx sv create --template minimal --types ts --add tailwindcss="plugins:typography,forms" playwright better-auth="demo:password" drizzle="database:mysql+mysql:mysql2+docker:yes" --install pnpm evilchat
+2. Install the dependencies: 
+```bash
+npm i # npm
+pnpm i # pnpm
 ```
+**Note:** It is recommended to use pnpm as it is way more performant.
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+3. Run the development server:
+```bash
+pnpm run dev
 ```
+(you can stop it by clicking ctrl+c)
 
-## Building
-
-To create a production version of your app:
-
-```sh
-npm run build
+4. Build:
+```bash
+pnpm run build
 ```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
