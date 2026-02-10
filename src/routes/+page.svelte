@@ -1,8 +1,12 @@
 <script>
+    import { goto } from "$app/navigation";
     import favicon from "$lib/assets/favicon.png"
     import sveltekit from "$lib/assets/sveltekit.png"
     import tailwindcss from "$lib/assets/tailwindcss.png";
     import Vite from "$lib/assets/Vite.png";
+    function signUpRoute(){
+        goto("/signup")
+    }
 </script>
 <header class="bg-black w-full h-15 border-b border-b-gray-400 text-white flex items-center">
     <div class="flex items-center pl-10">
@@ -17,7 +21,7 @@
         A full-stack real time chat application project I'm working on to 
         improve my web development skills.
     </p>
-    <button type="button" class="text-white bg-green-600 mt-6 h-10 w-30 border border-gray-500 cursor-pointer hover:bg-green-700 hover:scale-110 transition duration-300 ease-in-out">Get Started!</button>
+    <button type="button" onclick={signUpRoute} class="text-white bg-green-600 mt-6 h-10 w-30 border border-gray-500 cursor-pointer hover:bg-green-700 hover:scale-110 transition duration-300 ease-in-out">Get Started!</button>
 </div>
 
 <div class="text-white mt-10 mb flex flex-col items-center">
